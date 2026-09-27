@@ -30,7 +30,7 @@ jobs:
 
       - name: Build IPA with Flet
         run: |
-          yes | flet build ipa --module-name ubt_test --no-codesign
+          yes | flet build ipa --module-name ubt_test -- --no-codesign
 
       - name: Upload IPA Artifact
         uses: actions/upload-artifact@v4
